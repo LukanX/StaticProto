@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Design 3</title>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/waypoints.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<section class="header"><a href="http://lukanx.github.io/MessageProto/app/#/">Branded Site Header</a></section>
+	<section class="target-bg">
+		<div class="container">
+			<div class="logo-container"></div>
+		</div>
+	</section>
+	<div class="nav-bar-wrapper">
+		<div class="nav-bar">
+			<div class="container nav-container">
+				<ul>
+					<li class = "popular"><a href="#popular-offers">Popular Offers</a></li>
+					<li class="expert"><a href="#expert-tips">Expert Tips</a></li>
+					<li class="explor"><a href="#explore-offers">Explore All Offers</a></li>
+					<li class="similar"><a href="#similar">Similar to Target</a></li>
+					<li class="nearby"><a href="#nearby">Nearby</a></li>
+					<li class="app"><a href="#app">App</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="popular-offers" class="anchor-offset">
+		<div class="container padding-top">
+			<img src="images/1-popular-offers.png" alt="">
+		</div>
+	</div>
+
+	<div id="expert-tips" class="anchor-offset">
+		<div class="container">
+			<img src="images/2-expert-tips.png" alt="">
+		</div>
+	</div>
+
+	<div id="explore-offers" class="anchor-offset">
+		<div class="container">
+			<img src="images/3-explore-all-coupons.png" alt="">
+		</div>
+	</div>
+
+	<div id="similar" class="anchor-offset">
+		<div class="container">
+			<img src="images/4-similar-to-target.png" alt="">
+		</div>
+	</div>
+
+	<div id="nearby" class="anchor-offset">
+		<div class="container">
+			<img src="images/5-nearby.png" alt="">
+		</div>
+	</div>
+
+	<div id="app" class="anchor-offset">
+		<div class="app-container">
+			<img src="images/6-app.png" alt="">
+		</div>
+	</div>
+
+	<div id="submit">
+		<div class="container">
+			<img src="images/7-submit.png" alt="">
+		</div>
+	</div>
+
+	<div class="footer">Site Footer</div>
+
+<script>
+
+$(document).ready(function(){
+	$('.nav-bar-wrapper').waypoint(function(){
+		$('.nav-bar').toggleClass('fixed');
+		$('.logo-container').toggleClass('hidden');
+	});
+	// $('#popular-offers').waypoint(function(){
+	// 	if(direction === 'down'){
+	// 		$('.popular').addClass('active');
+	// 	}
+	// 	else{
+	// 		$('.popular').removeClass('active');
+	// 	}
+	// });
+});
+
+
+</script>
+	
+</body>
+</html>

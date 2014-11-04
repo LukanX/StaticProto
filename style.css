@@ -1,0 +1,175 @@
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: "helvetica neue", helvetica, arial, sans-serif;
+}
+a{
+	text-decoration: none;
+	color: #349dc5;
+}
+
+a:hover{
+	color: #167ea3;
+}
+
+a:visited{
+	color: #106e8f
+}
+
+.header{
+	width: 100%;
+	height: 125px;
+  background: #c2c2c2;
+  line-height: 125px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.target-bg{
+	height: 140px;
+	background: url(images/target-bg.jpg) repeat-x center center;
+}
+
+.container{
+	width: 1280px;
+	margin: auto;
+	position: relative;
+}
+
+.container.padding-top{
+	padding-top: 20px;
+}
+
+.container.faux-sidebar{
+	padding-left: 270px;
+}
+
+.logo-container{
+	width: 195px;
+	height: 195px;
+	background: white url(images/targetlogo-6.jpeg) no-repeat center center;
+	background-size: 80%;
+	border: 1px solid #E2E1DC;
+	position: absolute;
+	left: 0;
+	top: 20px;
+	z-index: 5;
+}
+
+.nav-bar{
+	width: 100%;
+	border-top: 1px solid #E2E1DC;
+	border-bottom: 1px solid #E2E1DC;
+	background: white;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.nav-container{
+	position: relative;
+	padding: 10px 0;
+}
+
+.nav-container ul{
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.nav-container li{
+	display: inline-block;
+	padding: 0 10px;
+	font-size: 14px;
+	line-height: 28px;
+	vertical-align: middle;
+	border-right: 1px solid #E2E1DC;
+
+}
+
+.nav-container li a:visited{
+	color: #349dc5;
+
+}
+
+.nav-bar-wrapper{
+	width: 100%;
+	height: 50px;
+	position: relative;
+}
+
+.nav-container li:last-child{
+	border-right: none;
+}
+
+.nav-container li.active{
+	font-weight: bold;
+}
+
+.container img{
+	display: block;
+	margin: auto;
+}
+
+#expert-tips, #similar{
+	background: #F5F5F4;
+}
+
+/*#popular-offers, #explore-offers, #nearby{
+	background: white;
+}*/
+
+#submit{
+	background: #6A6A6A;
+}
+
+.app-container{
+	width: 100%;
+	overflow: hidden;
+}
+
+.app-container img{
+	display: block;
+}
+
+.fixed .nav-container{
+	background: url(images/targetlogo-6.jpeg) 270px center no-repeat;
+	background-size: 36px;
+}
+
+.fixed{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 20;
+}
+
+.logo-container.hidden{
+	display: none;
+	border: none;
+}
+
+.footer{
+	background: #616262;
+	font-size: 24px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 300px;
+	color: white;
+}
+
+.anchor-offset{
+	padding-top: 50px;
+	margin-top: -50px;
+}
